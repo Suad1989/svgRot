@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="et">click</p>
+
+
+</body>
+
+
+<style>
+
+    #et{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        color: red;
+        font-size: 50px;
+        margin: 5 auto;
+    }
+    svg {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .text {
+        font-size:40px; 
+        position: fixed;
+    }
+    .example{
+        border: 3px solid red;
+        border-radius: 50%;
+        border: dotted solid black;
+        border-style: dotted;
+        border-color: red red blue blue;
+        position: absolute;background: transparent;
+        
+        
+        }
+
+        .example {
+        -webkit-animation-name: example;
+        -webkit-animation-duration: 4000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: example;
+        -moz-animation-duration: 4000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: example;
+        -ms-animation-duration: 4000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+    
+        animation-name: example;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+  
+    }
+
+    .example{
+        color: white;
+    }
+    @-ms-keyframes example {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes example {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes example {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes example {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }}
+    
+</style>
+  <svg  viewBox="0 0 300 300"  class="example" width="300" height="200" >
+      <circle class="krug" r="120" cx="150" cy="150" ></circle> 
+      <text class="text" x="80"  y="160"  fill="white">click me</text>
+      
+  </svg>
+
+
+
+</html>
